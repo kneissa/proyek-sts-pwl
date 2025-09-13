@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    .about-section {
+      text-align: center;
+      padding: 50px 35px;
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      color: #e67817; /* orange */
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 250px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background: #fff;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-img {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    /* Gradient overlay */
+    .card-img::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    }
+
+    /* Teks di dalam gambar */
+    .card-text {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      right: 15px;
+      color: white;
+      z-index: 2;
+    }
+
+    .card-text h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+
+    .card-text p {
+      margin: 0 0 8px;
+      font-size: 0.9rem;
+    }
+
+    .card-text a {
+      color: #4aa3ff;
+      font-size: 0.85rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <section class="about-section">
+    <h2>About</h2>
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-img" style="background-image: url('sejarah.jpg');"></div>
+        <div class="card-text">
+          <h3>Sejarah</h3>
+          <p>Dibangun sebelum segala peradaban dan sebelum semua legenda dimulai</p>
+          <a href="#">Click For More</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-img" style="background-image: url('motto.jpg');"></div>
+        <div class="card-text">
+          <h3 style="color: #ffffff;">Motto</h3>
+          <p>"Kalau tidak ada roti makan kue saja."</p>
+          <a href="#">Click For More</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-img" style="background-image: url('fondasi.jpg');"></div>
+        <div class="card-text">
+          <h3>Fondasi</h3>
+          <p>Keyakinan pada diri supaya dapat nilai bagus agar tidak remedial</p>
+          <a href="#">Click For More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+
+.left {
+  flex: 0.4; 
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.left img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.left h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #EE7E37; 
+  margin-bottom: 8px;
+}
+
+.left p {
+  font-size: 14px;
+  color: #d2691e; 
+  letter-spacing: 1px;
+}
+
+
+.right {
+  flex: 0.6; 
+  background: #EE7E37; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-box {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #444;
+}
+
+.login-box label {
+  font-size: 14px;
+  color: #444;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-box input:focus {
+  border-color: #EE7E37;
+}
+
+.login-box .forgot {
+  font-size: 12px;
+  color: #444;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #EE7E37; 
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-box button:hover {
+  background: #d46a2f; 
+}
+.login-box .signup {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.login-box .signup a {
+  color: #EE7E37;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-box .signup a:hover {
+  text-decoration: underline;
+}
+
+
+.kucing{
+  margin-top: 1.6rem;
+  margin-left: 1.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
