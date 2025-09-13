@@ -37,26 +37,29 @@ Simply just open the index.html file in your favorite browser.
 
 ```Project structure
 sts-pwl/
-  ├── index.html            ~ Main page
-  ├── index.css             ~ Main page styling
-  ├── pendaftaran.html      ~ Register page
-  ├── pendaftaran.css       ~ Register page
-  ├── login.html            ~ Login page
-  ├── style.css             ~ Login page styling
-  ├── n1.html               ~ News page 1
-  ├── n2.html               ~ News page 2
-  ├── n3.html               ~ News page 3
-  ├── n4.html               ~ News page 4
-  ├── n5.html               ~ News page 5
-  ├── about fondasi.html    ~ Fondation page
-  ├── about motto.html      ~ Motto page
-  ├── About Us.css             ~ About page styling
-  ├── news.css              ~ News page styling
-  ├── ###.html              ~ Support page
-  ├── ###.css               ~ Support page styling
-  ├── ###.png               ~ Supporting icons/images
-  ├── ###.jpg               ~ Supporting icons/images
-  └── README.md             ~ Project documentation
+  ├── index.html                ~ Main page
+  ├── index.css                 ~ Main page styling
+  ├── pendaftaran.html          ~ Register page
+  ├── pendaftaran.css           ~ Register page
+  ├── login.html                ~ Login page
+  ├── style.css                 ~ Login page styling
+  ├── n1.html                   ~ News page 1
+  ├── n2.html                   ~ News page 2
+  ├── n3.html                   ~ News page 3
+  ├── n4.html                   ~ News page 4
+  ├── n5.html                   ~ News page 5
+  ├── about fondasi.html        ~ Fondation page
+  ├── about sejarah.html        ~ History page
+  ├── about motto.html          ~ Motto page
+  ├── About Us.css              ~ About page styling
+  ├── pendaftaranberhasil.html  ~ Page after register success
+  ├── pendaftaranberhasil.css   ~ Styling of page after register success 
+  ├── news.css                  ~ News page styling
+  ├── ###.html                  ~ Support page
+  ├── ###.css                   ~ Support page styling
+  ├── ###.png                   ~ Supporting icons/images
+  ├── ###.jpg                   ~ Supporting icons/images
+  └── README.md                 ~ Project documentation
 ```
 
 ---
