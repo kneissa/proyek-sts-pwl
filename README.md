@@ -48,9 +48,9 @@ sts-pwl/
   ├── n3.html               ~ News page 3
   ├── n4.html               ~ News page 4
   ├── n5.html               ~ News page 5
-  ├── About fondasi.html    ~ Fondation page
-  ├── About motto.html      ~ Motto page
-  ├── About.css             ~ About page styling
+  ├── about fondasi.html    ~ Fondation page
+  ├── about motto.html      ~ Motto page
+  ├── About Us.css             ~ About page styling
   ├── news.css              ~ News page styling
   ├── ###.html              ~ Support page
   ├── ###.css               ~ Support page styling
