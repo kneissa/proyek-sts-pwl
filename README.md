@@ -38,7 +38,7 @@ Simply just open the index.html file in your favorite browser.
 ```Project structure
 sts-pwl/
   ├── index.html            ~ Main page
-  ├── pendaftaran.html      ~ Support page
+  ├── pendaftaran.html      ~ Register page
   ├── ###.html              ~ Support page
   ├── ###.css               ~ Support page styling
   ├── index.css             ~ Website styling
