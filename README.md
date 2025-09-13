@@ -38,10 +38,12 @@ Simply just open the index.html file in your favorite browser.
 ```Project structure
 sts-pwl/
   ├── index.html            ~ Main page
+  ├── index.css             ~ Main page styling
   ├── pendaftaran.html      ~ Register page
+  ├── login.html            ~ Login page
+  ├── style.css             ~ Login page styling 
   ├── ###.html              ~ Support page
   ├── ###.css               ~ Support page styling
-  ├── index.css             ~ Website styling
   ├── ###.png               ~ Supporting icons/images
   ├── ###.jpg               ~ Supporting icons/images
   └── README.md             ~ Project documentation
