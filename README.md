@@ -37,13 +37,14 @@ Simply just open the index.html file in your favorite browser.
 
 ```Project structure
 sts-pwl/
-  ├── index.html    ~ Main page
-  ├── ###.html      ~ Support page
-  ├── ###.css       ~ Support page styling
-  ├── index.css     ~ Website styling
-  ├── ###.png       ~ Supporting icons/images
-  ├── ###.jpg       ~ Supporting icons/images
-  └── README.md     ~ Project documentation
+  ├── index.html            ~ Main page
+  ├── pendaftaran.html      ~ Support page
+  ├── ###.html              ~ Support page
+  ├── ###.css               ~ Support page styling
+  ├── index.css             ~ Website styling
+  ├── ###.png               ~ Supporting icons/images
+  ├── ###.jpg               ~ Supporting icons/images
+  └── README.md             ~ Project documentation
 ```
 
 ---
