@@ -48,13 +48,13 @@ sts-pwl/
   ├── n3.html                   ~ News page 3
   ├── n4.html                   ~ News page 4
   ├── n5.html                   ~ News page 5
+  ├── news.css                  ~ News page styling
   ├── about fondasi.html        ~ Fondation page
   ├── about sejarah.html        ~ History page
   ├── about motto.html          ~ Motto page
   ├── About Us.css              ~ About page styling
   ├── pendaftaranberhasil.html  ~ Page after register success
   ├── pendaftaranberhasil.css   ~ Styling of page after register success 
-  ├── news.css                  ~ News page styling
   ├── ###.html                  ~ Support page
   ├── ###.css                   ~ Support page styling
   ├── ###.png                   ~ Supporting icons/images
