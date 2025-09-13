@@ -38,6 +38,8 @@ Simply just open the index.html file in your favorite browser.
 ```Project structure
 sts-pwl/
   ├── index.html    ~ Main page
+  ├── ###.html      ~ Support page
+  ├── ###.css       ~ Support page styling
   ├── index.css     ~ Website styling
   ├── ###.png       ~ Supporting icons/images
   ├── ###.jpg       ~ Supporting icons/images
