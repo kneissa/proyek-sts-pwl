@@ -10,12 +10,12 @@ This platform is designed to help applicants who may not have the opportunity to
 
 1. Clone the repository:
     ```bash
-    https://github.com/kneissa/project-sts-pwl.git
+    https://github.com/kneissa/proyek-sts-pwl.git
     ```
 
 2. Navigate into the project folder:
     ```bash
-    cd project-sts-pwl
+    cd proyek-sts-pwl
     ```
 
 3. This has No additional dependencies are required since this project only uses HTML and CSS.
