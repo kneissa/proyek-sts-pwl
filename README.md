@@ -31,6 +31,8 @@ Simply just open the index.html file in your favorite browser.
    
 3. Complete the registration form by providing the required data in each field.
 
+4. Enjoy the features by login using the account the users had
+
 ---
 
 ## Architecture
