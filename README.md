@@ -40,6 +40,7 @@ sts-pwl/
   ├── index.html            ~ Main page
   ├── index.css             ~ Main page styling
   ├── pendaftaran.html      ~ Register page
+  ├── pendaftaran.css       ~ Register page
   ├── login.html            ~ Login page
   ├── style.css             ~ Login page styling 
   ├── ###.html              ~ Support page
