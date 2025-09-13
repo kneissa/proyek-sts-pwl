@@ -42,7 +42,13 @@ sts-pwl/
   ├── pendaftaran.html      ~ Register page
   ├── pendaftaran.css       ~ Register page
   ├── login.html            ~ Login page
-  ├── style.css             ~ Login page styling 
+  ├── style.css             ~ Login page styling
+  ├── n1.html               ~ News page 1
+  ├── n2.html               ~ News page 2
+  ├── n3.html               ~ News page 3
+  ├── n4.html               ~ News page 4
+  ├── n5.html               ~ News page 5
+  ├── news.css              ~ News page styling
   ├── ###.html              ~ Support page
   ├── ###.css               ~ Support page styling
   ├── ###.png               ~ Supporting icons/images
