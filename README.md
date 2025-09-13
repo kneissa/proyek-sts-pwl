@@ -97,3 +97,5 @@ You are free to use, modify, and redistribute it as long as proper credit is giv
 1. Gervasio Velasques
 2. Kaneisha Eliorra
 3. Michael Leonardo
+
+< i am the bone of my sword
