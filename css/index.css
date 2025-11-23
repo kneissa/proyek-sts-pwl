@@ -1,0 +1,832 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+    margin-left: 2.1875rem; ;
+    margin-right: 2.1875rem; ;
+    font-family: 'roboto';
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 10%;
+    gap: auto;
+  position: fixed;       /* biar ngambang */
+  top: 0;                /* start di atas */
+  left: 0;
+  width: 100%;
+  height: 70px;         /* full lebar */
+  background: #fff;      /* kasih background, biar gak transparan */
+  z-index: 9999;         /* selalu di atas konten */
+  transition: top 0.3s ease; /* animasi sembunyi/muncul */
+}
+
+
+nav img{
+  max-height: 100%; /* keep image within the nav's height (70px) */
+  height: auto;
+  width: auto;      /* keep aspect ratio */
+  object-fit: contain;
+  display: block;
+  transition: all 0.3s ease;
+  margin-right: 7%;
+  padding-right: 0;
+}
+
+.navtext{
+    display: flex;
+    gap: 3.65rem;
+}
+
+.tulisan_nav > a{
+    color:rgba(238, 126, 55, 1);
+    font-size: 100%;
+    font-weight: bolder;
+    font-family:'Roboto';
+    text-decoration: none;
+}
+
+.tulisan_nav > a:hover{
+  color:rgb(134, 52, 0); 
+}
+
+.banner{
+    margin-left:-2.1875rem;
+    margin-right:-2.1875rem;
+}
+.banner > img{
+    width: 100%;
+    height: 708px;
+    object-fit: cover;
+}
+
+
+.motivasilog{
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-family: 'roboto';
+    margin-bottom: 2rem;
+
+}
+
+.daftar{
+    margin-top: 0.625rem;
+    width: 183px;
+    height: 62px;
+    border-radius: 12px;
+    color: #ffffff;
+    background-color: #EE7E37;
+    border:none;
+    font-family: 'roboto';
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bolder;
+    box-shadow: inset 0 0 0 3px #fff, 
+                0 0 20px rgba(255, 140, 0, 0.8); /* glow luar */
+  transition: all 0.3s ease;
+ 
+}
+
+.daftar::before {
+    background: linear-gradient(90deg, #f57c00, #ff9800);
+    box-shadow: inset 0 0 0 2px #fff, 
+                0 0 25px rgba(255, 140, 0, 1);
+    width: 200px;
+    height: 67px;
+    transition: all 0.5s ease;
+}
+.daftar:hover::before {
+    left: 0;
+}
+
+.daftar:hover{
+    background: linear-gradient(90deg, #ffb300, #ff9800);
+    box-shadow: inset 0 0 0 2px #fff, 
+                0 0 25px rgba(255, 140, 0, 1);
+    width: 200px;
+    height: 67px;
+}
+
+
+
+.login{
+    margin-top: 0.625rem;
+    margin-left: 2.1875rem;
+    width: 183px;
+    height: 62px;
+    border-radius: 12px;
+    color: #EE7E37;
+    background-color: #ffffff;
+    border:2px solid #EE7E37;
+    font-family: 'roboto';
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+ 
+}
+
+.login:hover{
+    box-shadow: inset 0 0 0 2px #fff, 
+                0 0 25px rgb(255, 166, 56);
+
+}
+
+ 
+.profil{
+  border: 0;
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.logout{
+  border: 0;
+  border-radius: 10px;
+  width: 70px;
+  height: 35px;
+  background-color: transparent;
+  font-size: 14px;
+  color: rgb(212, 31, 18);
+  font-weight: 600;
+}
+
+
+.tulisan{
+    font-family: 'roboto';
+    color: #ffffff;
+    font-size: 40px;
+}
+
+#box{
+  position: relative;
+  width: 83%;
+  min-height: 300px;
+  height: auto;
+  border-radius: 30px;
+  padding: 0 70px;
+  color: white;
+  background-image: 
+    linear-gradient(to right, rgba(199, 113, 27, 0.95) 0%,rgb(199, 113, 27, 0.95)45%, transparent),
+    url('../foto/sss.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-left: 2%;
+  margin-right: 2%;
+  transition: all 0.3s ease;
+}
+
+#box > div > P{
+  margin-top: -30px;
+}
+
+#box2{
+  position: relative;
+  width: 83%;
+  height: auto;
+  min-height: 350px;
+  border-radius: 30px;
+  padding: 0 70px;
+  color: white;
+  background-image: 
+    linear-gradient(to right, rgba(199, 113, 27, 0.95) 0%,rgb(199, 113, 27, 0.95)45%, transparent),
+    url('../foto/sss.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-left: 2%;
+  margin-right: 2%;
+  transition: all 0.3s ease;
+}
+
+#box2 > div > P{
+  margin-top: -30px;
+}
+.makna{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.makna img{
+    width: 260px;
+    transition: all 0.5s ease;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width:800px) {
+  #box div{
+    margin-top: -40px;
+  }
+
+  #box2 div{
+    margin-top: -40px;
+    width: 120%;
+  }
+ 
+  #box, #box2 {
+    padding: 30px 35px;
+  }
+  .makna img{
+    width: auto;
+    max-width: 150px;
+  }
+}
+@media screen and (max-width:480px) {
+  .makna{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+    .login{
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 850px){
+  .navtext {
+    display: none;
+  }
+  nav img{
+    max-height: 50px; /* slightly smaller on narrow screens */
+    height: auto;
+    width: auto;
+    margin-right: 18%;
+    padding-right: 0;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 330px){
+  .navtext {
+    display: none;
+  }
+  nav img{
+    max-height: 35px; /* slightly smaller on narrow screens */
+    height: auto;
+    width: auto;
+    margin-right: 30%;
+    padding-right: 0;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: -30px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 250px){
+  .navtext {
+    display: none;
+  }
+  nav img{
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: -30px;
+    margin-right: 10px;
+  }
+}
+
+
+
+
+
+
+/* sama sama belajar */
+    .about-section {
+      margin-top: 6rem;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 4rem;
+      font-family: 'roboto';
+      color: rgba(238, 126, 55, 1);
+      margin-bottom: 6rem;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .card {
+      width: 400px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background: #fff;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-15px);
+    }
+
+    .card-img {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Gradient overlay */
+    .card-img::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0,0,0,0));
+    }
+
+    /* Teks di dalam gambar */
+    .card-text {
+      position: absolute;
+      font-family:'roboto';
+      bottom: 15px;
+      left: 15px;
+      right: 15px;
+      color: rgb(255, 255, 255);
+      z-index: 2;
+    }
+
+    .card-text h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .card-text p {
+        color: #e2e2e2;
+      margin: 0 0 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .card-text a {
+      color: #4aa3ff;
+      font-size: 0.85rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card-text a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .card-text p{
+        margin-top: -10px;
+      }
+      .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .card-img{
+         width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9; /* biar tinggi tetap proporsional */
+        background-size: cover;
+      }
+      .card{
+        width: 90%;          /* <--- ini penting biar dia nyusut */
+      }
+    }
+    @media screen and (max-width: 300px) {
+      .card-text p{
+        display: none;
+      }
+      .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .card-img{
+         width: 100%;
+        height: auto;
+        background-size: cover;
+        padding-top: 30px;
+      }
+      .card{
+        width: 90%;          /* <--- ini penting biar dia nyusut */
+      }
+    }
+  
+/* News */
+.newsbox{
+  border: solid rgb(223, 223, 223) 2px;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.Hot p{
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-top: 0px;
+}
+
+
+.hotf{
+  position: relative;
+  width: 700px;
+  margin-bottom: 15px;
+}
+
+.hotf img{
+  margin-top: -40px;
+  width: 700px;
+  height: 450px;
+  object-position: center;
+  object-fit: cover;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hotf::after {
+  content: "";
+  height: 60%;
+  bottom: 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  pointer-events: none; /* biar gak ganggu klik */
+  transition: all 0.1s ease; /* <--- ini penting */
+}
+
+.hotf p{
+  font-size: 3rem;
+  position: absolute;
+  bottom: -35px;
+  left:25px;
+  z-index: 2;
+  color: white;
+}
+
+.hotf:hover::after{
+  background: linear-gradient(to top, rgba(0,0,0,1), transparent);
+  height: 100%;
+  bottom: 0px;
+}
+
+.now{
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+  max-height: 455px;
+}
+
+.now p{
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.scrolly::-webkit-scrollbar{
+  width: 7px;
+  display: block;
+}
+
+.scrolly::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* warna jalur */
+  border-radius: 10px;
+}
+
+.scrolly::-webkit-scrollbar-thumb {
+  background: rgba(255, 160, 17, 0.997); /* warna batang scrollbar */
+  border-radius: 10px;
+}
+
+.terkini{
+  display: flex;
+}
+
+.terkini img{
+  object-fit: cover;
+  width: 220px;
+  height: 100px;
+  border-radius: 7px;
+}
+
+.terkini p{
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+.terkini div{
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+}
+
+.link:hover .terkini img {
+  opacity: 0.8; /* ubah opacity gambar */
+  transition-delay: 0.05s;
+}
+
+.link:hover .terkini div {
+  opacity: 0.7; /* teks juga sedikit redup */
+  transition-delay: 0.05s;
+}
+
+.judul{
+  font-size: 34px;
+  font-family: 'roboto';
+  color: rgba(238, 126, 55, 1);
+}
+
+.foto img{
+  width: 16rem;
+  height: 16rem;
+  border-radius: 7px 7px 0px 0px;
+  object-fit: cover;
+  flex-shrink: 0;   /* jangan dipaksa mengecil */
+}
+
+.foto{
+  display: flex;
+  flex-direction: row;
+  gap: 5%;       
+  overflow-x: auto;     /* biar bisa geser kanan kiri */
+  overflow-y: hidden;   
+  padding-top: 25px;
+  padding-bottom: 12px;
+  padding-right:50px;
+}
+
+.foto > div:hover { 
+  transform: translateY(-20px);
+  transition-delay: 0.1s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} 
+
+.foto::-webkit-scrollbar{
+  height: 8px;
+  display: block;
+}
+
+.foto::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* warna jalur */
+  border-radius: 10px;
+}
+
+.foto::-webkit-scrollbar-thumb {
+  background: rgba(255, 160, 17, 0.997); /* warna batang scrollbar */
+  border-radius: 10px;
+}
+
+.foto p{
+  display: block;
+  padding: 0 10px;
+  font-family: 'roboto';
+  font-size: 1rem;
+  max-width: 16rem;
+}
+
+.news{
+  margin-top: 10.577777777rem;
+}
+
+.foto > div{
+  border: solid 1px rgb(216, 216, 216);
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease;
+  margin-bottom: 20px;
+}
+
+
+.kotak{
+  display: flex; flex-direction: row;  gap: 20px; max-height: 430px; justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1150px) {
+  .kotak {
+    flex-direction: column;
+    align-items: center; /* biar tengah */
+    gap: 40px;
+    max-height: none; /* jangan batasi tinggi di HP */
+  }
+
+  .hotf{
+    width: 100%; /* biar ikut layar penuh */
+    aspect-ratio: 16 / 9;  /* <<— ini yang ngatur tinggi proporsional */
+    position: relative;
+  }
+  .now{
+    width: 100%; /* biar ikut layar penuh */
+    height: 500%;
+    position: relative;
+  }
+
+  .hotf img {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;          /* isi seluruh area 16:9 tadi */
+    object-fit: cover;    /* biar nempel di container */
+    top: -60px;
+    left: 0;
+  }
+  .hotf::after {
+    top: auto;
+    height: 100%;
+    margin-bottom: 60px;
+  }
+
+  
+  .hotf p{
+     font-size: 1.8rem;
+     padding-bottom: 4%;
+     margin-bottom: 87px;
+  }
+
+  .scrolly {
+    max-height: 300px; /* biar scroll-nya nggak kepanjangan */
+  }
+
+  .now{
+    margin-bottom: auto;
+    margin-top: -95px;
+  }
+
+  .mungkin{
+    margin-top: 0%;
+
+    
+  }
+}
+@media screen and (max-width: 300px) {
+  .Hot > p{
+    font-size: 2.5rem;
+  }
+  .kotak {
+    flex-direction: column;
+    align-items: center; /* biar tengah */
+    gap: 40px;
+    max-height: none; /* jangan batasi tinggi di HP */
+  }
+
+  .hotf{
+    margin-top: 20%;
+    width: 100%; /* biar ikut layar penuh */
+    aspect-ratio: 16 / 9;  /* <<— ini yang ngatur tinggi proporsional */
+    position: relative;
+  }
+  .now{
+    width: 100%; /* biar ikut layar penuh */
+    height: 500%;
+    position: relative;
+  }
+
+  .hotf img {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;          /* isi seluruh area 16:9 tadi */
+    object-fit: cover;    /* biar nempel di container */
+    top: -60px;
+    left: 0;
+  }
+  .hotf::after {
+    top: auto;
+    height: 100%;
+    margin-bottom: 63px;
+  }
+
+  
+  .hotf p{
+     font-size: 18px;
+     padding-bottom: 4%;
+     margin-bottom: 92px;
+  }
+
+  .scrolly {
+    max-height: 300px; /* biar scroll-nya nggak kepanjangan */
+  }
+
+  .now{
+    margin-bottom: auto;
+    margin-top: -95px;
+  }
+
+  .mungkin{
+    margin-top: 0%;
+
+    
+  }
+}
+
+ /* masukan */
+    .container {
+      margin-top: 10.477777777rem;;
+    }
+
+    textarea {
+      width: 99%;
+      min-height: 120px;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: vertical;
+    }
+
+    .button {
+      margin-top: 1.5rem;
+      background: rgba(238, 126, 55, 1);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+      width: 150px;
+      height: auto;
+    }
+
+    .button:hover {
+      background: #d65d00;
+    }
+
+
+/* footer */
+.footer {
+  margin-top: 7%;
+  margin-left:-2.1875rem;
+  margin-right:-2.1875rem;
+  width: auto;
+  background-color: #f97316;
+  color: #fff;
+  display: flex;
+  padding-top: 1%;
+  padding-left: 5.5%;
+  justify-content: space-between;
+  margin-bottom: -0.5%;
+  padding-bottom: 1%;
+  font-family: 'roboto';
+  display: flex;
+  gap: 2%;
+}
+
+.footer h3 {
+  margin-bottom: 5%;
+}
+
+.footer-logo img {
+  width: 80%;
+  margin-right: 2%;
+  margin-top: 30px;
+}
+
+
+
+.contain {
+  max-width: 1140px;  /* Atur batas lebar konten di sini */
+  margin-left: auto;   /* Bikin ke tengah */
+  margin-right: auto;  /* Bikin ke tengah */
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}

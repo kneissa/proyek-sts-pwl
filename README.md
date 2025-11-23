@@ -10,7 +10,7 @@ This platform is designed to help applicants who may not have the opportunity to
 
 1. Clone the repository:
     ```bash
-    https://github.com/kneissa/proyek-sts-pwl.git
+    git clone https://github.com/kneissa/proyek-sts-pwl.git
     ```
 
 2. Navigate into the project folder:
@@ -18,20 +18,41 @@ This platform is designed to help applicants who may not have the opportunity to
     cd proyek-sts-pwl
     ```
 
-3. This has No additional dependencies are required since this project only uses HTML and CSS.
-Simply just open the index.html file in your favorite browser.
+3. Run a local PHP server:
+   **Option 1: Using PHP built-in server**
+   ```bash
+   php -S localhost:8000
+   ```
+
+4. Set up the database:
+  - Open your database tool (phpMyAdmin, MySQL Workbench, or command line).
+  - Create a new database "ta_pwl".
+  - Import the SQL file provided in the repository (ta_pwl.sql):
+    ```bash
+    mysql -u root -p proyek_sts < ta_pwl.sql
+    ```
+    Or use phpMyAdmin → Import → Choose file ta_pwl.sql.
 
 ---
 
 ## Usage
 
-1. Run the website by opening index.html in browser.
+1. Open your browser and go to http://localhost:8000 (if using built-in PHP server) or http://localhost/proyek-sts-pwl (if using XAMPP/Laragon)
 
 2. On the homepage, users can click Register button(Daftar) to create a new account.
    
 3. Complete the registration form by providing the required data in each field.
 
-4. Enjoy the features by login using the account the users had
+4. Login to access features:
+
+   - **Admin login**:  
+     Username: `admin`  
+     Password: `111`
+
+   - **User login**:  
+     Create an account first via the registration page.
+
+5. After login, users can access their dashboard or profile page depending on their role.
 
 ---
 
@@ -39,29 +60,35 @@ Simply just open the index.html file in your favorite browser.
 
 ```Project structure
 sts-pwl/
-  ├── index.html                ~ Main page
-  ├── index.css                 ~ Main page styling
-  ├── pendaftaran.html          ~ Register page
-  ├── pendaftaran.css           ~ Register page
-  ├── login.html                ~ Login page
-  ├── style.css                 ~ Login page styling
-  ├── n1.html                   ~ News page 1
-  ├── n2.html                   ~ News page 2
-  ├── n3.html                   ~ News page 3
-  ├── n4.html                   ~ News page 4
-  ├── n5.html                   ~ News page 5
-  ├── news.css                  ~ News page styling
-  ├── about fondasi.html        ~ Fondation page
-  ├── about sejarah.html        ~ History page
-  ├── about motto.html          ~ Motto page
-  ├── About Us.css              ~ About page styling
-  ├── pendaftaranberhasil.html  ~ Page after register success
-  ├── pendaftaranberhasil.css   ~ Styling of page after register success 
-  ├── ###.html                  ~ Support page
-  ├── ###.css                   ~ Support page styling
-  ├── ###.png                   ~ Supporting icons/images
-  ├── ###.jpg                   ~ Supporting icons/images
-  └── README.md                 ~ Project documentation
+  ├── index.php                   ~ Main page
+  ├── admin.php                   ~ Admin page
+  ├── pendaftaran.php             ~ Register page
+  ├── login.php                   ~ Login page
+  ├── register.php                ~ Account register page
+  ├── n1.html                     ~ News page 1
+  ├── n2.html                     ~ News page 2
+  ├── n3.html                     ~ News page 3
+  ├── n4.html                     ~ News page 4
+  ├── n5.html                     ~ News page 5
+  ├── profile.php                 ~ User profile page
+  ├── profile2.php                ~ admin view profile page
+  ├── about fondasi.html          ~ Fondation page
+  ├── about sejarah.html          ~ History page
+  ├── about motto.html            ~ Motto page
+  ├── pendaftaranberhasil.html    ~ Page after register success
+  ├── /foto                       ~ Image folder 
+      ├── ###.png                   ~ Supporting icons/images
+      ├── ###.jpg                   ~ Supporting icons/images
+  ├── /css                        ~ Styling folder 
+      ├── index.css                 ~ Main page styling
+      ├── pendaftaran.css           ~ Register page styling
+      ├── style.css                 ~ Login, account register page styling
+      ├── news.css                  ~ News page styling
+      ├── About Us.css              ~ About page styling
+      ├── pendaftaranberhasil.css   ~ Styling of page after register success 
+      ├── admin.css                 ~ Admin page styling 
+  ├── ta_pwl.sql                  ~ database
+  └── README.md                   ~ Project documentation
 ```
 
 ---
