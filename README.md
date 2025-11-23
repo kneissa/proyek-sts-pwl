@@ -58,10 +58,12 @@ This platform is designed to help applicants who may not have the opportunity to
    
 **Admin**
       - view registrant data
+      
       - add new registrant
 
 **Registrant**
       - create account
+      
       - view about the school information
 
 ---
