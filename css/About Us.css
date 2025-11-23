@@ -1,10 +1,9 @@
 body {
+  font-family: 'roboto';
+  max-width: 100%;
   margin-left: 2.1875rem; ;
   margin-right: 2.1875rem; ;
-  font-family: Arial, sans-serif;
-  max-width: 100%;
   overflow-x: hidden;
-
 }
 
 header {
@@ -14,8 +13,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-top: 2%;padding-bottom: 2%;
-  margin-left: 3%;
-  margin-right: 3%;
   padding: auto;
 }
 
@@ -50,6 +47,16 @@ header {
   margin-top :2%;
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    /* 2. Ubah susunannya jadi ke BAWAH dan DIBALIK */
+    flex-direction: column-reverse;
+  }
+  .content img{
+    width: 100%;
+    height: 16px;
+  }
+}
 
 .content p{
   text-align: justify;
@@ -57,20 +64,17 @@ header {
 
 
 .content img{
-    margin-top: 5%;
+    margin-top: 17%;
     height: auto; 
     object-fit: cover;
-    border-radius: 1%;
-    width:22rem;
+    border-radius: 3%;
 }
 
 h2 {
-  color: #000;
-}
-h3{
-    font-weight: 300;
+  color: #f97316;
 }
 
+/* footer */
 .footer {
   margin-top: 7%;
   margin-left:-2.1875rem;
@@ -84,6 +88,9 @@ h3{
   justify-content: space-between;
   margin-bottom: -0.5%;
   padding-bottom: 1%;
+  font-family: 'roboto';
+  display: flex;
+  gap: 2%;
 }
 
 .footer h3 {
@@ -94,4 +101,24 @@ h3{
   width: 80%;
   margin-right: 2%;
   margin-top: 30px;
+}
+
+
+.contain {
+  max-width: 1140px;  /* Atur batas lebar konten di sini */
+  margin-left: auto;   /* Bikin ke tengah */
+  margin-right: auto;  /* Bikin ke tengah */
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
