@@ -54,10 +54,10 @@ This platform is designed to help applicants who may not have the opportunity to
 
 5. After login, users can access their dashboard or profile page depending on their role.
    Main features:
-   A. Admin
+Admin
       - view registrant data
       - add new registrant
-   B. Registrant
+Registrant
       - create account
       - view about the school information
 
