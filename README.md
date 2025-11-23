@@ -53,6 +53,13 @@ This platform is designed to help applicants who may not have the opportunity to
      Create an account first via the registration page.
 
 5. After login, users can access their dashboard or profile page depending on their role.
+   Main features:
+   A. Admin
+      - view registrant data
+      - add new registrant
+   B. Registrant
+      - create account
+      - view about the school information
 
 ---
 
