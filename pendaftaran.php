@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pendaftaran Murid Baru - Pelita Cahaya Abadi</title>
-  <link rel="stylesheet" href="pendaftaran.css">
+  <link rel="stylesheet" href="css/pendaftaran.css">
 </head>
 <body>
   <header>
-    <a href="index.html" class="back-btn"><img src="back.png" alt=""></a>
+    <a href="index.php" class="back-btn"><img src="foto/back.png" alt=""></a>
     <div class="header-right">
-      <img src="Frame 52.png" alt="Logo Sekolah" class="logo">
+      <img src="foto/Frame 52.png" alt="Logo Sekolah" class="logo">
     </div>
   </header>
  
   <div class="hero">
-  <img src="sss.jpg" alt="Sekolah Pelita Cahaya Abadi">
+  <img src="foto/sss.jpg" alt="Sekolah Pelita Cahaya Abadi">
   <div class="hero-text">
     <h2>Pendaftaran Murid Baru Sekolah Pelita Cahaya Abadi</h2>
   </div>
@@ -28,7 +28,7 @@
     <b>Isi form sesuai dengan informasi yang dibutuhkan</b>. Setiap langkah menuju pendidikan adalah langkah menuju masa depan yang lebih baik. Jangan ragu untuk mendaftar, karena hari ini bisa jadi awal dari perjalanan besar menuju cita-cita.
     </p>
  
-    <form id="formPendaftaran">
+<form id="formPendaftaran" method="post" action="UTS-PWL/php/data1.php">    
       <h3>Data 1</h3>
       <label>Nama Siswa</label>
       <input type="text" name="namaSiswa" required>
@@ -46,8 +46,8 @@
       <input type="email" name="email" required>
  
       <label>Nomor Aktif Anak</label>
-      <input type="text" name="nomorAbsen">
- 
+      <input type="number" name="nomorAktif">
+
       <h3>Data 2</h3>
       <label>Nama Ayah</label>
       <input type="text" name="namaAyah">
@@ -83,15 +83,9 @@
       <h3>Alasan Masuk Sekolah Ini</h3>
       <textarea name="alasan"></textarea>
  
-      <button type="submit" onclick="window.location.href='pendaftaranberhasil.html'">Kirim</button>
+      <button type="submit">Kirim</button>
     </form>
   </main>
- 
-  <script>document.getElementById("formPendaftaran").addEventListener("submit", function(event) {
-  event.preventDefault();
-  alert("Form pendaftaran berhasil dikirim! Terima kasih.");
-});
- </script>
 </body>
 </html>
  

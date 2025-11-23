@@ -8,7 +8,7 @@
 
 body {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 
@@ -103,12 +103,15 @@ body {
   font-size: 16px;
   border: none;
   border-radius: 20px;
+  border: 2px solid transparent;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.2s;
 }
 
 .login-box button:hover {
-  background: #d46a2f; 
+  background-color: white;   /* berubah jadi putih */
+  color: #d86a2c;            /* teksnya berubah jadi oranye */
+  border: 2px solid orange; 
 }
 .login-box .signup {
   text-align: center;
@@ -125,3 +128,47 @@ body {
 .login-box .signup a:hover {
   text-decoration: underline;
 }
+
+
+.kucing{
+  margin-top: 1.6rem;
+  margin-left: 1.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.left, .right, .login-box {
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width:680px) {
+  .kucing{
+    position: absolute;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: white;
+  }
+  .left{
+    display: none;
+  }
+  .right{
+    width: 100%;
+    flex: 100%;
+  }
+}
+@media screen and (max-width:490px) {
+  .kucing{
+    display: none ;
+  }
+  .left{
+    display: none;
+  }
+  .right{
+    width: 100%;
+    flex: 100%;
+  }
+  .login-box{
+    width: 100%;;
+  }
+}
+
